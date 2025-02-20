@@ -16,7 +16,7 @@ time.sleep(2)
 driver.execute_script("window.scrollBy(0,600);")
 time.sleep(2)
 
-#finding input places
+#finding input fields
 Name_field=driver.find_element(*(By.XPATH,"//input[@placeholder='Name']"))
 Email_field=driver.find_element(*(By.XPATH,"//input[@placeholder='Email']"))
 phone_field=driver.find_element(*(By.XPATH,"//input[@placeholder='Phone']"))
