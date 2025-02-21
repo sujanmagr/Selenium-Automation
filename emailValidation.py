@@ -94,4 +94,3 @@ time.sleep(3)
 #quit window after a while
 time.sleep(3)
 driver.quit()
-phooo

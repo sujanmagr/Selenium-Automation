@@ -15,6 +15,8 @@ time.sleep(2)
 market=driver.find_element(*(By.XPATH,"//a[normalize-space()='Market']"))
 market.click()
 time.sleep(2)
+# alert=Alert(driver)
+# alert.accept()
 try:
     alert = Alert(driver)
     alert.dismiss()  # Dismiss the pop-up
