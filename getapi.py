@@ -5,7 +5,8 @@ import json
 api="https://reqres.in"
 
 def get_request():
-    url=api+"/api/users"
+    # url=api+"/api/users/2"
+    url=api+"/api/users?page=2"
     response=requests.get(url)
     assert response.status_code==200
     json_data=response.json()
