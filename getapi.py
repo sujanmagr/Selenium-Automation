@@ -1,4 +1,4 @@
-#api automation with function
+#script to get data placed in the apis
 import requests
 import json
 #send api url
