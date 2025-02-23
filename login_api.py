@@ -1,3 +1,4 @@
+#script to login in reqres api
 import requests
 import json
 
@@ -5,7 +6,7 @@ api="https://reqres.in"
 def login():
     url=api+"/api/login"
     data={
-        "email": "eve.hot@reqres.in",
+        "email": "eve.holt@reqres.in",
         "password": "cityslicka"
     }
     response=requests.post(url, json=data)
