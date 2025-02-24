@@ -1,9 +1,8 @@
 #script to register and login 
 import requests
 import json
-
 api="https://reqres.in"
-
+#register function
 def register():
     url=api+"/api/register"
     data={
@@ -17,7 +16,7 @@ def register():
     print("register successful as:", json_str)
 
 register()
-
+#login function
 def login():
     url=api+"/api/login"
     data={
