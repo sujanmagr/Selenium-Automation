@@ -11,6 +11,7 @@ driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 # from webdriver_manager.microsoft import EdgeChromiumDriverManager
 # driver = webdriver.Edge(service=EdgeService(EdgeChromiumDriverManager().install()))
 
+
 # Open a webpage to test
 url="https://merolagani.com/"
 driver.get(url)
