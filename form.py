@@ -8,6 +8,7 @@ driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 url="https://formy-project.herokuapp.com/form"
 driver.get(url)
 driver.maximize_window()
+#find input fields
 firstName=driver.find_element(By.ID, "first-name")
 lastName=driver.find_element(By.ID, "last-name")
 job=driver.find_element(By.ID, "job-title")
@@ -16,13 +17,13 @@ gender=driver.find_element(By.ID, "checkbox-1")
 year=driver.find_element(By.ID, "select-menu")
 experience=driver.find_element(By.XPATH, "/html/body/div/form/div/div[6]/select/option[4]")
 date=driver.find_element(By.XPATH,"//input[@id='datepicker']")
-
-
+#send data to the input fields
 firstName.send_keys("sujan")
 lastName.send_keys("magar")
 job.send_keys("Student")
 EducationLevel.click()
 gender.click()
+time.sleep(5)
 #scroll down
 driver.execute_script("window.scrollBy(0, 300);")
 year.click()
